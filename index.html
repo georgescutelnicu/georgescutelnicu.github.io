@@ -38,20 +38,13 @@
 </header>
 
 		<!-- Bar Effect -->
-		<article class="mx-auto h-fit max-w-3xl w-[95vw] flex flex-nowrap bg-slate-400">
-				<div class="bg-blue-900 w-full h-1.5" id="one"></div>
-				<div class="bg-blue-900 w-full h-1.5" id="two"></div>
-				<div class="bg-blue-900 w-full h-1.5" id="three"></div>
+		<article class="mx-auto max-w-3xl w-[95vw] flex flex-nowrap">
+				<div class="bg-white w-full h-1.5"></div>
 		</article>
 
 		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
-			<ul class="shadow-box">
+			<ul class="shadow-box pdt">
   
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-
 
     
     <li class="relative border-b border-text/30" x-data="{selected:null}">
@@ -72,22 +65,6 @@
     </div>
   </div>
 </li>
-
-
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-
-
-    
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
 
 
     
@@ -170,15 +147,6 @@
 </li>
 
 
-
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-
-
     
     <li class="relative border-b border-text/30" x-data="{selected:null}">
   <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
@@ -219,15 +187,6 @@
 
 
 
-
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-
-
-    
     <li class="relative border-b border-text/30" x-data="{selected:null}">
   <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
     <div class="flex items-center justify-between">
@@ -321,12 +280,33 @@
 </li>
 
 
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
+
+      <li class="relative border-b border-text/30" x-data="{selected:null}">
+  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
+    <div class="flex items-center justify-between">
+      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
+        <svg viewBox="0 0 24 24" class="w-8 h-8 mr-4" astro-icon="mdi:account-badge-outline"><path fill="currentColor" d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562zm-1.649-4.003l-4 18l-1.953-.434l4-18z"></path></svg>
+        Skills
+      </h4>
+
+      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
+    </div>
+  </button>
+
+  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+    <div class="py-4 px-2 text-text/60">
+      <div class="w-space">Python NumPy Pandas Matplotlib Seaborn Scikit-learn PyTorch Tkinter Flask BS4 <br>
+        Java <br>
+        JavaScript HTML5 CSS3 Bootstrap <br>
+        PostgreSQL SQLAlchemy <br>
+        Power-BI <br>
+        Jupyter-Notebook Git REST-Api</div>
+    </div>
+  </div>
+</li>
 
 
-    
+
     <li class="relative border-b border-text/30" x-data="{selected:null}">
   <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
     <div class="flex items-center justify-between">
@@ -404,11 +384,6 @@
 </li>
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
-
-
     
     <li class="relative border-b border-text/30" x-data="{selected:null}">
   <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
@@ -452,6 +427,6 @@
 
 
 </ul>
-		</main>
-
+		</main>   
 	</body></html>
+    
