@@ -1,432 +1,129 @@
-<!DOCTYPE html><html lang="en"><head>
-		<meta charset="utf-8">
-		<link rel="icon" type="image/svg+xml" href="img/favicon.png">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width">
-		<meta name="generator" content="Astro v2.8.5">
-		<title>George Scutelnicu</title>
-	<link rel="stylesheet" href="css/style.css"><script type="module" src="js/main.js"></script><script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script><script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</head>
-	<body class="bg-background text-text flex flex-col min-h-screen">
-
-		<!-- Hero section --><header class="mx-auto py-8">
-  <article class="grid grid-cols-3 grid-rows-1 place-items-center w-[98vw] max-w-2xl">
-    <div class="self-end mb-9">
-      <div class="md:grid text-left hidden ">
-        <h6 class="text-sm text-text/70">github.com/georgescutelnicu</h6>
-        <a href="https://github.com/georgescutelnicu" target="_blank" class="  hover:text-blue-300 flex items-center justify-center">
-          Check my GitHub
-        </a>
-      </div>
-    </div>
-
-    <div class="grid text-center self-center whitespace-nowrap">
-      <h1 class="text-3xl text-text">George Scutelnicu</h1>
-      <h3 class="text-lg text-text/90">Software Developer</h3>
-      <h5 class="text-sm text-text/80">& Chess Addict</h5>
-    </div>
-
-    <div class="md:grid text-right self-end hidden mb-9">
-      <h6 class="text-sm text-text/70">george.v.scutelnicu@gmail.com</h6>
-      <a href="mailto:george.v.scutelnicu@gmail.com" target="_blank" class="hover:text-blue-300 flex items-center justify-center">
-        Send me an e-mail
-      </a>
-    </div>
-  </article>
-</header>
-
-		<!-- Bar Effect -->
-		<article class="mx-auto max-w-3xl w-[95vw] flex flex-nowrap">
-				<div class="bg-white w-full h-1.5"></div>
-		</article>
-
-		<main class="mx-auto flex-grow max-h-[90vh] md:max-h-[70vh] max-w-3xl overflow-y-scroll grid gap-5 p-5 w-[95vw]">
-			<ul class="shadow-box pdt">
-  
-
-    
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <svg viewBox="0 0 24 24" class="w-8 h-8 mr-4" astro-icon="mdi:account-badge-outline"><path fill="currentColor" d="M17 3h-3v2h3v16H7V5h3V3H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-5 4a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m4 8H8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1m0 3H8v-1h8v1m-4 2H8v-1h4v1m1-15h-2V1h2v4z"></path></svg>
-        About
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      Hello👋, thanks for stopping by, my name is George and I'm a software developer. My journey began with a simple 'Hello World,' and from there, my interest in coding grew into a strong passion. After exploring various fields, I stumbled upon coding on my own, and it's captivated me ever since. Now, I'm dedicated to creating awesome projects and efficient solutions. Below, you'll find some of my personal projects.
-    </div>
-  </div>
-</li>
-
-
-    
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <svg viewBox="0 0 512 512" class="w-8 h-8 mr-4" astro-icon="ion:md-build"><path fill="currentColor" d="M474.1 398.2 289.1 212c18.3-47 8.1-102.3-30.5-141.1C217.9 30 156.9 21.8 108.1 44.3l87.4 88-61 61.4-89.5-88c-24.3 49-14.1 110.4 26.5 151.3 38.6 38.9 93.5 49.1 140.3 30.7l185 186.2c8.1 8.2 20.3 8.2 28.5 0l46.8-47c10.2-8.3 10.2-22.6 2-28.7z"></path></svg>
-        Projects
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base mr-12">
-            Python, Flask, PostgreSQL, SQLAlchemy, AWS, HTML, CSS, Bootstrap, Plotly, Swagger UI, VisualCrossing API, Dev.me API, Pytest
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>George Scutelnicu</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <section>
+        <div class="header">
+          <img src="img/pp.png" alt="Photo of myself">
+          <a class="home" href="index.html">Home</a>
+          <div style="flex-grow:1";></div>
+          <div class="links">
+            <a href="https://github.com/georgescutelnicu" class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md" aria-label="Social Media" target="_blank">
+            <svg width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+            </a>
+            <a href="https://www.kaggle.com/georgescutelnicu" class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md" aria-label="Social Media" target="_blank">
+              <svg width="30" height="30" viewBox="0 0 32 32"><path fill="currentColor" d="M10.352 4c-.234 0-.352.117-.352.352v23.293c0 .234.117.351.352.351h2.296c.234 0 .354-.116.354-.351v-4.836l1.809-1.723l5.238 6.664c.142.165.306.25.496.25h3.172c.166 0 .26-.048.283-.143l-.066-.359l-6.91-8.588l6.626-6.412c.123-.128.08-.498-.252-.498h-3.28c-.167 0-.333.086-.499.252L13 18.975V4.352c0-.235-.117-.352-.352-.352z"/></svg>
+            </a>
+            <a href="https://huggingface.co/georgescutelnicu" class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md" aria-label="Social Media" target="_blank">
+              <svg width="28" height="28" viewBox="0 0 32 32"><g fill="currentColor"><path d="M3 15.999c0-3.67 1.106-6.91 3.235-9.221C8.35 4.48 11.568 3 15.999 3c4.43 0 7.648 1.48 9.764 3.778c2.129 2.311 3.235 5.55 3.235 9.22c0 .421-.015.836-.044 1.244c.33.179.602.447.787.772c.418.05.796.23 1.094.497c.109-.82.163-1.66.163-2.512c0-4.061-1.227-7.821-3.764-10.576C24.684 2.654 20.903 1 16 1C11.095 1 7.313 2.654 4.763 5.423C2.226 8.178 1 11.938 1 15.999c0 .853.054 1.693.163 2.513a1.993 1.993 0 0 1 1.096-.498a2.01 2.01 0 0 1 .784-.77A17.619 17.619 0 0 1 3 15.998m9.668 12.688a4.77 4.77 0 0 1-1.861 1.597c1.557.466 3.29.715 5.192.715c1.902 0 3.635-.25 5.194-.716a4.77 4.77 0 0 1-1.861-1.596a17.07 17.07 0 0 1-3.333.312c-1.198 0-2.308-.108-3.331-.312"/><path d="M7.888 13.338a2 2 0 0 0-.775 2.325a2 2 0 1 1 .775-2.325m17 2.325a2 2 0 0 0-.776-2.325a2 2 0 1 1 .776 2.325M9.349 9.413c-.21.228-.32.53-.367.778a1 1 0 0 1-1.964-.382c.089-.456.31-1.153.858-1.749C8.453 7.431 9.316 7 10.5 7c1.195 0 2.062.452 2.636 1.082c.544.597.77 1.292.85 1.747a1 1 0 0 1-1.971.342a1.546 1.546 0 0 0-.358-.742C11.47 9.222 11.142 9 10.5 9c-.653 0-.972.217-1.151.413m11.001 0c-.21.228-.32.53-.368.778a1 1 0 0 1-1.963-.382c.088-.456.31-1.153.857-1.749C19.453 7.431 20.316 7 21.5 7c1.196 0 2.062.452 2.636 1.082c.544.597.77 1.292.85 1.747a1 1 0 0 1-1.971.342a1.545 1.545 0 0 0-.358-.742C22.47 9.222 22.142 9 21.5 9c-.653 0-.971.217-1.15.413M8.4 14.2a1 1 0 0 1 1.4.2c.298.397 1.992 2.1 6.2 2.1s5.902-1.703 6.2-2.1a1 1 0 1 1 1.6 1.2c-.702.936-3.008 2.9-7.8 2.9s-7.098-1.964-7.8-2.9a1 1 0 0 1 .2-1.4m20.59 4.94a1 1 0 0 0-1.649-.892L23.58 21.54l-.079-.04c0-.413.038-.788.072-1.125c.09-.888.153-1.513-.572-1.875c-1.338-.669-1.952 1.564-2.363 3.743c-.094.496-.32.955-.572 1.392c-1.33 2.303-.066 4.614.935 5.365c1.789 1.342 3.5 1 5 0c.908-.605 2.635-1.82 3.927-2.737a1.116 1.116 0 0 0-1.146-1.904l-.126.064l1.985-1.655a1 1 0 0 0-.782-1.758l.293-.25a1 1 0 0 0-1.16-1.62m-25.982 0a1 1 0 0 1 1.649-.892l3.763 3.292l.079-.04c0-.413-.038-.788-.072-1.125c-.09-.888-.153-1.513.572-1.875c1.338-.669 1.952 1.564 2.363 3.743c.094.496.32.955.572 1.392c1.33 2.303.066 4.614-.935 5.365c-1.79 1.342-3.5 1-5 0c-.908-.605-2.635-1.82-3.927-2.737A1.116 1.116 0 0 1 3.22 24.36l.126.064l-1.985-1.655a1 1 0 0 1 .781-1.758l-.292-.25a1 1 0 0 1 1.16-1.62"/></g></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Hey! I’m <span class="name">George</span></h1>
+        <p class="about">
+          Hello👋, welcome to my website, my name is George and I'm a passionate software developer! My journey started with a simple 'Hello World' and from there my interest in coding grew into a strong passion. After exploring various fields, I stumbled upon coding on my own, and it's captivated me ever since. Now, I'm dedicated to creating awesome projects and efficient solutions. Below, you'll find some of my personal projects.
         </p>
+        <p>You can contact me through email, <a class="decoration" href="mailto:george.v.scutelnicu@gmail.com">george.v.scutelnicu@gmail.com</a>, for any matters.</p>
+      </section>
+      <section>
+        <h2>Technologies I've Worked With</h2>
+        <ul>
+          <li>Python NumPy Pandas Matplotlib Seaborn Scikit-learn PyTorch Tkinter Flask BS4</li>
+          <li>Java JavaFX</li>
+          <li>JavaScript HTML5 CSS3 Bootstrap</li>
+          <li>PostgreSQL SQLAlchemy</li>
+          <li>AWS</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section>
+        <details>
+        <summary>Education 📚</summary>
+        <pre>
+          <code>
+<span style="color: #1e90ff;">class</span> <span style="color: #0000ff;">Education</span>:
+    <span style="color: #007acc;">def</span> <span style="color: #00aba9;">__init__</span>(<span style="color: #8F00FF;">self</span>, degree):
+        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">degree</span> = degree
+        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certificates</span> = {}
+
+    <span style="color: #007acc;">def</span> <span style="color: #00aba9;">add_certificate</span>(<span style="color: #8F00FF;">self</span>, name, issuer, year, view_certificate):
+        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certificates</span>[name] = {
+            <span style="color: #00AB66;">"Issuer"</span>: issuer,
+            <span style="color: #00AB66;">"Certificate Year"</span>: year,
+            <span style="color: #00AB66;">"View Certificate"</span>: view_certificate
+        }
+
+my_education = <span style="color: #0000ff;">Education</span>(<span style="color: #00AB66;">"Bachelor's Degree in International Relations and Affairs"</span>)
+
+my_education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"AWS Fundamentals"</span>, <span style="color: #00AB66;">"Amazon Web Services"</span>, <span style="color: #0000ff;">2023</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/D8T33HVY3KCC">"link_to_certificate"</a></span>)
+my_education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Deep Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #0000ff;">2023</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/certificate/AMD56JTDECKQ">"link_to_certificate"</a></span>)
+my_education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Machine Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #0000ff;">2022</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9K8AYKETCCJ9">"link_to_certificate"</a></span>)
+my_education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Data Science Professional"</span>, <span style="color: #00AB66;">"IBM"</span>, <span style="color: #0000ff;">2022</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/professional-cert/ALQ3JMHKFCM5">"link_to_certificate"</a></span>)
+          </code>
+        </pre>
+        </details>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <p>To see more of what I've done, visit my <a class="decoration" href="https://github.com/georgescutelnicu">GitHub</a> page.</p>
+        <div class="projects">
+          <a class="project" href="proj/wanderlust.html">
+              <h4>Wanderlust</h4>
+              <p>Travel inspiration platform featuring a user-friendly website for exploring destinations and keeping track of them by saving them into your lists and a RESTful API for accessing travel data. Hosted on AWS using ...</p>
+          </a>
+          <a class="project" href="proj/classification.html">
+              <h4>File Structuring with Image Classification</h4>
+              <p>This project combines a deep learning image classification model with a file organization script, leveraging the power of PyTorch and EfficientNetB2 architecture for ...</p>
+          </a>
+          <a class="project" href="proj/minesweeper.html">
+              <h4>Minesweeper</h4>
+              <p>Classic puzzle with user-friendly interface, various difficulty levels, and endless hours of challenging entertainment! Developed in both Python (TKinter) and Java (JavaFX).</p>
+          </a>
+        </div>
+      </section>
+      <section>
+        <p class="footer">Less noise, more focus!</p>
+      </section>
     </div>
+    <script>
+      function getRandomColor(colorArray) {
+        return colorArray[Math.floor(Math.random() * colorArray.length)];
+      }
 
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Wanderlust</p>
-         <p class="text-sm text-text/50">Travel inspiration platform that includes a user-friendly website for exploring destinations and a RESTful API for accessing travel data. Hosted on AWS.</p>
-    </div>
+      const projects = document.querySelectorAll('.project');
+      const colors = ['#34748e', '#7b7077', '#aca4a9', '#df72b7', '#7d53de', '#59c9a5', '#db5a42', '#009a9a'
+        ];
 
-    <div class="self-start justify-self-end">
-        <a href="https://github.com/georgescutelnicu/Wanderlust/" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Open Project
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-        <br>
-        <a href="http://ec2-3-76-8-165.eu-central-1.compute.amazonaws.com/" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Live View
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base mr-12">
-            Python, PyTorch, Pillow, Pandas, Matplotlib, Tqdm
-        </p>
-    </div>
+      projects.forEach(project => {
+        project.addEventListener('mouseenter', () => {
+            const randomColor = getRandomColor(colors);
+            project.style.borderColor = randomColor;
+            project.querySelector('p').style.color = randomColor;
+            project.querySelector('h4').style.color = randomColor;
+        });
 
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Image Classification and File Structuring</p>
-        <p class="text-sm text-text/50">Deep learning image classification model training with a file organization script allowing you to classify and organize images efficiently.</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://github.com/georgescutelnicu/Image-Classification-and-File-Structuring" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Open Project
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base mr-12">
-            Python, Tkinter
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Minesweeper</p>
-        <p class="text-sm text-text/50">Classic puzzle game with user-friendly interface, various difficulty levels, and endless hours of challenging entertainment!</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://github.com/georgescutelnicu/Minesweeper" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Open Project
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div>
-    </div>
-  </div>
-</li>
-
-
-    
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <iconify-icon class="w-8 h-8 mr-4 fs-32" icon="carbon:education"></iconify-icon>
-        Education
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            2016-2019
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Bachelor's Degree in Communication and Foreign Policy</p>
-        <p class="text-sm text-text/50">Bucharest</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <p class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Titu Maiorescu University
-            
-        </p>
-    </div>
-</div>
-    </div>
-  </div>
-</li>
-
-
-
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <svg viewBox="0 0 32 32" class="w-8 h-8 mr-4" astro-icon="carbon:certificate"><path fill="currentColor" d="m24 17 1.912 3.703 4.088.594L27 24l.771 4L24 25.75 20.229 28 21 24l-3-2.703 4.2-.594L24 17zM6 16h6v2H6zM6 12h10v2H6zM6 8h10v2H6z"></path><path fill="currentColor" d="M16 26H4V6h24v10h2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h12z"></path></svg>
-        Certifications
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            2023
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">AWS Fundamentals</p>
-        <p class="text-sm text-text/50">Amazon Web Services</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/D8T33HVY3KCC" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            View Certificate
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            2023
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Deep Learning Specialization</p>
-        <p class="text-sm text-text/50">DeepLearning.AI</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://www.coursera.org/account/accomplishments/certificate/AMD56JTDECKQ" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            View Certificate
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            2023
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Machine Learning Specialization</p>
-        <p class="text-sm text-text/50">DeepLearning.AI </p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9K8AYKETCCJ9" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            View Certificate
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div></div>
-<div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            2022
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80">Data Science Professional</p>
-        <p class="text-sm text-text/50">IBM</p>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="
-            https://www.coursera.org/account/accomplishments/professional-cert/ALQ3JMHKFCM5" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            View Certificate
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div>
-    </div>
-  </div>
-</li>
-
-
-
-      <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <svg viewBox="0 0 24 24" class="w-8 h-8 mr-4" astro-icon="mdi:account-badge-outline"><path fill="currentColor" d="m7.375 16.781l1.25-1.562L4.601 12l4.024-3.219l-1.25-1.562l-5 4a1 1 0 0 0 0 1.562zm9.25-9.562l-1.25 1.562L19.399 12l-4.024 3.219l1.25 1.562l5-4a1 1 0 0 0 0-1.562zm-1.649-4.003l-4 18l-1.953-.434l4-18z"></path></svg>
-        Skills
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="w-space">Python NumPy Pandas Matplotlib Seaborn Scikit-learn PyTorch Tkinter Flask BS4 <br>
-        Java <br>
-        JavaScript HTML5 CSS3 Bootstrap <br>
-        PostgreSQL SQLAlchemy <br>
-        Power-BI <br>
-        Jupyter-Notebook Git REST-Api</div>
-    </div>
-  </div>
-</li>
-
-
-
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <iconify-icon class="fs-32 mr-4" icon="dashicons:admin-links"></iconify-icon>
-        Links
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80"></p>
-        <p class="text-sm text-text/70"></p>
-        <sub class="text-xs text-text/60"></sub>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://github.com/georgescutelnicu" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            GitHub
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80"></p>
-        <p class="text-sm text-text/70"></p>
-        <sub class="text-xs text-text/60"></sub>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://www.kaggle.com/georgescutelnicu/Home" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            Kaggle
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div><div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80"></p>
-        <p class="text-sm text-text/70"></p>
-        <sub class="text-xs text-text/60"></sub>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="https://huggingface.co/georgescutelnicu" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            HuggingFace
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div>
-    </div>
-  </div>
-</li>
-
-
-    
-    <li class="relative border-b border-text/30" x-data="{selected:null}">
-  <button type="button" class="w-full px-3 py-3 text-left" @click="selected !== 1 ? selected = 1 : selected = null">
-    <div class="flex items-center justify-between">
-      <h4 class="text-2xl font-mono text-text/80 hover:text-text/95 flex justify-center items-start">
-        <svg viewBox="0 0 24 24" class="w-8 h-8 mr-4" astro-icon="ri:contacts-book-fill"><path fill="currentColor" d="M7 2v20H3V2h4zm2 0h10.005C20.107 2 21 2.898 21 3.99v16.02c0 1.099-.893 1.99-1.995 1.99H9V2zm13 4h2v4h-2V6zm0 6h2v4h-2v-4zm-7 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-3 4h6a3 3 0 0 0-6 0z"></path></svg>
-        Contact
-      </h4>
-
-      <svg viewBox="0 0 24 24" x-bind:style="selected ==1 ? 'rotate:'+' 180deg' : ''" class="w-5 h-5" astro-icon="ic:baseline-arrow-drop-down"><path fill="currentColor" d="m7 10 5 5 5-5z"></path></svg>
-    </div>
-  </button>
-
-  <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-    <div class="py-4 px-2 text-text/60">
-      <div class="grid grid-cols-3 grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
-            
-        </p>
-    </div>
-
-    <div class="self-start justify-self-start text-left">
-        <p class="text-lg text-text/80"></p>
-        <p class="text-sm text-text/70"></p>
-        <sub class="text-xs text-text/60"></sub>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href="mailto: george.v.scutelnicu@gmail.com" target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            george.v.scutelnicu@gmail.com
-            <svg viewBox="0 0 48 48" class="w-4 h-4 ml-2" astro-icon="icon-park-outline:unlink"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m25.893 16.03-7.779-7.778c-2.863-2.863-7.41-2.96-10.157-.213-2.746 2.746-2.65 7.293.214 10.157l7.778 7.778M31.916 22.07l7.778 7.779c2.864 2.864 3.235 7.274.214 10.157s-7.294 2.65-10.157-.214l-7.779-7.778M21.238 21.076l-3.889-3.89M30.313 30.15l-3.889-3.889"></path></g></svg>
-        </a>
-    </div>
-</div>
-</div>
-    </div>
-  </div>
-</li>
-
-
-
-</ul>
-		</main>   
-	</body></html>
-    
+        project.addEventListener('mouseleave', () => {
+            project.style.borderColor = '#ebebeb'; 
+            project.querySelector('p').style.color = 'black'; 
+            project.querySelector('h4').style.color = 'black'; 
+        });
+      });
+    </script>
+  </body>
+</html>
