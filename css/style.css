@@ -96,6 +96,7 @@ summary{
 
 code{
     font-size: 17px;
+    white-space: pre-wrap;
 }
 
 span a{
