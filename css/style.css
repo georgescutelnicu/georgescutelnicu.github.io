@@ -1,6 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .main{
-    margin-top: 8%;
-    font-family: "Inconsolata",sans-serif;
+    overflow-y: auto;
+    padding-top: 8%;
+    padding-bottom: 3%;
+    font-family: "Inconsolata", sans-serif;
+    height: 100%;
+}
+
+.main::-webkit-scrollbar{
+    width: 17px;
+}
+
+.main::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    
+}
+
+.main::-webkit-scrollbar-thumb{
+    background: #c1c1c1;
+    border: 2px #fff solid;
+}
+
+.main::-webkit-scrollbar-thumb:hover{
+    background: #A9A9A9;
+}
+
+.main::-webkit-scrollbar-thumb:active {
+  background-color: #787878;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(8px);
+  }
+}
+
+.github:hover .octo-arm {
+  animation: bounce 0.2s ease 3;
 }
 
 section{
@@ -21,13 +71,14 @@ section{
     color: #009a9a;
 }
 
-.links{
-    margin-right: 30px;
-}
-
-.links a{
-    text-decoration: none;
-    color: black;
+.github{
+    fill: #333;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+    cursor: pointer;
 }
 
 h1{
@@ -40,14 +91,16 @@ h4{
 }
 
 .name{
+    font-family: "Shadows Into Light", cursive;
     -webkit-animation: colorchange 20s infinite alternate;
 }
+
 @-webkit-keyframes colorchange {
     0% {
       color: #367588;
     }
     10% {
-      color: #8e44ad;
+      color: #009a9a;
     }
     20% {
       color: #1abc9c;
@@ -142,7 +195,6 @@ li span{
     margin: 0.5% 1% 0.5%;
     text-decoration: none;
     cursor: pointer;
-    transition: border-color 1s;
 }
 
 @media (max-width: 700px){
@@ -165,7 +217,8 @@ li span{
 }
 
 .wanderlust{
-    margin: 1% 8% 1%;
+    margin: 1%;
+    width: 30%;
     transition: transform 1s ease;
 }
 
