@@ -244,13 +244,19 @@ li span{
     transform: scale(1.25);
 }
 
-.minesweeper{
+.pysweeper{
     margin: 1% 6% 1%;
     transition: transform 1s ease;
 }
 
-.minesweeper:hover{
+.pysweeper:hover{
     transform: scale(1.05);
+}
+
+@media (max-width: 860px){
+    .stats{
+        width: 100%;  
+    }
 }
 
 @media (max-width: 800px){
