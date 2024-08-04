@@ -31,11 +31,11 @@
         </div>
       </section>
       <section>
-        <h1>File Structuring with Image Classification</h1>
+        <h1>Image Sorting with Classification</h1>
         <p class="about">
-          This project combines a deep learning image classification model with a file organization script, leveraging the power of PyTorch and EfficientNetB2 architecture for image classification while providing a convenient way to organize your image files into folders based on the predicted classes efficiently and conveniently.
+          This project combines a deep learning image classification model with a file sorting script, leveraging the power of PyTorch and EfficientNetB2 architecture for image classification while providing a convenient way to organize your image files into folders based on the predicted classes efficiently and conveniently.
         </p>
-        <p>► For details check the github repository <a class="decoration" href="https://github.com/georgescutelnicu/Image-Classification-and-File-Structuring">here</a>.</p>
+        <p>► For details check the github repository <a class="decoration" href="https://github.com/georgescutelnicu/Image-Sorting-with-Classification">here</a>.</p>
         <p>► The model can be checked on <a class="decoration" href="https://huggingface.co/spaces/georgescutelnicu/weather-image-classifier">HuggingFace</a>.</p>
       </section>
       <section>
@@ -44,11 +44,12 @@
         <p><strong>Tqdm</strong> displays progress bars during training, enhancing user experience.</p>
         <p><strong>Pandas</strong> and <strong>Matplotlib</strong> are exclusively used in the notebook for data preprocessing and visualization.</p>
         <p><strong>Gradio</strong> for deploying the classification model on <strong>HuggingFace</strong>.</p>
+        <p><strong>Pytest</strong> for writing and executing tests to ensure code reliability.</p>
       </section>
       <section>
         <h2>Getting started</h2>
         <h5>Clone the repository</h5>
-        <p class="git" id="gitClone">git clone https://github.com/georgescutelnicu/Image-Classification-and-File-Structuring.git</span>
+        <p class="git" id="gitClone">git clone https://github.com/georgescutelnicu/Image-Sorting-with-Classification.git</span>
             <a onclick="copyToClipboard('gitClone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="currentColor" d="M216 32H88a8 8 0 0 0-8 8v40H40a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-40h40a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8m-56 176H48V96h112Zm48-48h-32V88a8 8 0 0 0-8-8H96V48h112Z"/></svg></a>
         </p>
         <br>
@@ -65,12 +66,12 @@
             <a onclick="copyToClipboard('gitClone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="currentColor" d="M216 32H88a8 8 0 0 0-8 8v40H40a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-40h40a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8m-56 176H48V96h112Zm48-48h-32V88a8 8 0 0 0-8-8H96V48h112Z"/></svg></a>
         </p>
         <br>
-        <h5>To organize your files, follow these steps:</h5>
+        <h5>To sort your files, follow these steps:</h5>
         <ul>
           <li>Ensure you have the required libraries installed.</li>
           <li>Run the script with the following command:</li>
         </ul>
-        <p class="git" id="gitClone">python main.py --input-path 'path/to/your/input/directory' --output-path 'path/to/your/output/directory' --weights-path 'path/to/your/model/weights' --class-names-path 'path/to/your/class_names.txt' -r</span>
+        <p class="git" id="gitClone">python sorter.py --input-path 'path/to/your/input/directory' --output-path 'path/to/your/output/directory' --weights-path 'path/to/your/model/weights' --class-names-path 'path/to/your/class_names.txt' -r</span>
             <a onclick="copyToClipboard('gitClone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256"><path fill="currentColor" d="M216 32H88a8 8 0 0 0-8 8v40H40a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-40h40a8 8 0 0 0 8-8V40a8 8 0 0 0-8-8m-56 176H48V96h112Zm48-48h-32V88a8 8 0 0 0-8-8H96V48h112Z"/></svg></a>
         </p>
       </section>
