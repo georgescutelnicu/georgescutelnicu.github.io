@@ -119,6 +119,10 @@ education.<span style="color: #00aba9;">add_certificate</span>(<span style="colo
               <p>Classic minesweeper game with Python programming puzzles. Choose your difficulty, reveal safe cells, and avoid snakes. Simple interface, varied grid sizes, and detailed statistics enhance your gaming experience ...</p>
           </a>
         </div>
+        <div class="pagination">
+          <button class="prev" onclick="changePage(-1)" disabled>&#8592;</button>
+          <button class="next" onclick="changePage(1)">&#8594;</button>
+        </div>
       </section>
       <footer>
         <div class="footer-content">
@@ -134,27 +138,53 @@ education.<span style="color: #00aba9;">add_certificate</span>(<span style="colo
       </footer>
     </div>
     <script>
+      let currentPage = 1;
+      const projectsPerPage = 3;
+      const projects = document.querySelectorAll('.project');
+      const totalPages = Math.ceil(projects.length / projectsPerPage);
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      const colors = ['#34748e', '#7b7077', '#aca4a9', '#df72b7', '#7d53de', '#59c9a5', '#db5a42', '#009a9a', '#e69e5d', '#4a6d39'];
+
+      function displayProjects() {
+        const startIndex = (currentPage - 1) * projectsPerPage;
+        const endIndex = startIndex + projectsPerPage;
+
+        projects.forEach((project, index) => {
+          project.style.display = (index >= startIndex && index < endIndex) ? 'block' : 'none';
+        });
+
+        prevButton.disabled = currentPage === 1;
+        nextButton.disabled = currentPage === totalPages;
+      }
+
+      function changePage(direction) {
+        currentPage += direction;
+        displayProjects();
+      }
+
       function getRandomColor(colorArray) {
         return colorArray[Math.floor(Math.random() * colorArray.length)];
       }
 
-      const projects = document.querySelectorAll('.project');
-      const colors = ['#34748e', '#7b7077', '#aca4a9', '#df72b7', '#7d53de', '#59c9a5', '#db5a42', '#009a9a', '#e69e5d', '#4a6d39'];
+      document.querySelector('.projects').addEventListener('mouseenter', (event) => {
+        if (event.target.classList.contains('project')) {
+          const randomColor = getRandomColor(colors);
+          event.target.style.borderColor = randomColor;
+          event.target.querySelector('p').style.color = randomColor;
+          event.target.querySelector('h4').style.color = randomColor;
+        }
+      }, true);
 
-      projects.forEach(project => {
-        project.addEventListener('mouseenter', () => {
-            const randomColor = getRandomColor(colors);
-            project.style.borderColor = randomColor;
-            project.querySelector('p').style.color = randomColor;
-            project.querySelector('h4').style.color = randomColor;
-        });
+      document.querySelector('.projects').addEventListener('mouseleave', (event) => {
+        if (event.target.classList.contains('project')) {
+          event.target.style.borderColor = '#ebebeb';
+          event.target.querySelector('p').style.color = 'black';
+          event.target.querySelector('h4').style.color = 'black';
+        }
+      }, true);
 
-        project.addEventListener('mouseleave', () => {
-            project.style.borderColor = '#ebebeb'; 
-            project.querySelector('p').style.color = 'black'; 
-            project.querySelector('h4').style.color = 'black'; 
-        });
-      });
+      displayProjects();
     </script>
   </body>
 </html>
