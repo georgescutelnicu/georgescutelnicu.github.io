@@ -57,8 +57,8 @@ And a lot of other cool things (ʘ.ʘ)╯
         <summary>OSS Contribution 📝</summary>
         <pre>
           <code>
-<a class="decoration" href="https://github.com/narwhals-dev/narwhals" target="_blank">Narwhals</a> [~900 ★] - Documentation
-<a class="decoration" href="https://github.com/amit9838/mousam" target="_blank">Mousam</a> [~300 ★] - Bug Fix; Enhancement
+<a class="decoration" href="https://github.com/narwhals-dev/narwhals" target="_blank">Narwhals</a> [~1k+ ★] - Early-stage project documentation
+<a class="decoration" href="https://github.com/amit9838/mousam" target="_blank">Mousam</a> [~300 ★] - Fix incorrect forecast mapping; Implement dynamic scroll offset by current hour
           </code>
         </pre>
         </details>
@@ -71,21 +71,20 @@ And a lot of other cool things (ʘ.ʘ)╯
 <span style="color: #1e90ff;">class</span> <span style="color: #0000ff;">Education</span>:
     <span style="color: #007acc;">def</span> <span style="color: #00aba9;">__init__</span>(<span style="color: #8F00FF;">self</span>, degree):
         <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">degree</span> = degree
-        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certificates</span> = {}
+        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certifications</span> = {}
 
-    <span style="color: #007acc;">def</span> <span style="color: #00aba9;">add_certificate</span>(<span style="color: #8F00FF;">self</span>, name, issuer, year, view_certificate):
-        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certificates</span>[name] = {
+    <span style="color: #007acc;">def</span> <span style="color: #00aba9;">add_certification</span>(<span style="color: #8F00FF;">self</span>, name, issuer, view_certificate):
+        <span style="color: #8F00FF;">self</span>.<span style="color: #9F8170;">certifications</span>[name] = {
             <span style="color: #00AB66;">"Issuer"</span>: issuer,
-            <span style="color: #00AB66;">"Certificate Year"</span>: year,
             <span style="color: #00AB66;">"View Certificate"</span>: view_certificate
         }
 
 education = <span style="color: #0000ff;">Education</span>(<span style="color: #00AB66;">"Bachelor's Degree in International Relations and Affairs"</span>)
 
-education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"AWS Fundamentals"</span>, <span style="color: #00AB66;">"Amazon Web Services"</span>, <span style="color: #0000ff;">2023</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/D8T33HVY3KCC">"link_to_certificate"</a></span>)
-education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Deep Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #0000ff;">2023</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/certificate/AMD56JTDECKQ">"link_to_certificate"</a></span>)
-education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Machine Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #0000ff;">2022</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9K8AYKETCCJ9">"link_to_certificate"</a></span>)
-education.<span style="color: #00aba9;">add_certificate</span>(<span style="color: #00AB66;">"Data Science Professional"</span>, <span style="color: #00AB66;">"IBM"</span>, <span style="color: #0000ff;">2022</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/professional-cert/ALQ3JMHKFCM5">"link_to_certificate"</a></span>)
+education.<span style="color: #00aba9;">add_certification</span>(<span style="color: #00AB66;">"AWS Fundamentals"</span>, <span style="color: #00AB66;">"Amazon Web Services"</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/D8T33HVY3KCC">"link_to_certificate"</a></span>)
+education.<span style="color: #00aba9;">add_certification</span>(<span style="color: #00AB66;">"Deep Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/certificate/AMD56JTDECKQ">"link_to_certificate"</a></span>)
+education.<span style="color: #00aba9;">add_certification</span>(<span style="color: #00AB66;">"Machine Learning Specialization"</span>, <span style="color: #00AB66;">"DeepLearning.AI"</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/9K8AYKETCCJ9">"link_to_certificate"</a></span>)
+education.<span style="color: #00aba9;">add_certification</span>(<span style="color: #00AB66;">"Data Science Professional"</span>, <span style="color: #00AB66;">"IBM"</span>, <span style="color: #00AB66;"><a href="https://www.coursera.org/account/accomplishments/professional-cert/ALQ3JMHKFCM5">"link_to_certificate"</a></span>)
           </code>
         </pre>
         </details>
